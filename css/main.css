@@ -3,6 +3,7 @@
 body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
+  color: #282634;
 }
 
 a {
@@ -12,6 +13,7 @@ a {
 
 img {
   display: block; /*이미지 사이의 불필요한 여백을 없애기위한 초기셋팅작업*/
+  max-width: 100%; /* 이미지가 div크기에 맞추어 크기를 정렬해 준다.*/
 }
 
 .btn {
@@ -118,6 +120,7 @@ img {
 .sec_01 .container h4 {
   font-size: 24px;
   padding-bottom: 32px;
+  font-weight: 700;
 }
 
 .sec_01 .avatar {
@@ -138,7 +141,9 @@ img {
   padding: 135px 0;
 }
 
-.sec_02 .container {
+.sec_02 .container,
+.sec_03 .container,
+.sec_04 .container {
   /* background: red; */
   padding: 0 100px;
   box-sizing: border-box;
@@ -149,15 +154,19 @@ img {
 .section .text {
   /* background: yellow; */
   width: 470px;
+  line-height: 1.6;
 }
 
-.secionn .text h4 {
+.section .text h4 {
   font-size: 32px;
+  font-weight: bold;
+  padding-top: 26px;
   margin-bottom: 24px;
 }
 
 .section .text p.txt_01 {
   font-size: 18px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
@@ -176,6 +185,7 @@ img {
 .section .text .avatar {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 
 .section .text .avatar img {
@@ -185,9 +195,177 @@ img {
 
 .section .text .avatar span {
   font-size: 14px;
+  font-weight: 700;
 }
 
-.sec_02 .photo {
+.sec_02 .photo,
+.sec_03 .photo {
   background: green;
   width: 470px;
+  height: 330px;
+}
+
+/* section_03 */
+.section.sec_03 {
+  height: 600px;
+  box-sizing: border-box;
+  padding: 135px 0;
+  background: #f0f5f9;
+}
+
+/* section_04 */
+.section.sec_04 {
+  height: 600px;
+  box-sizing: border-box;
+  padding: 135px 0;
+}
+
+/* section_04 */
+.banner {
+  height: 370px;
+  background: #222222 url('../images/banner_img.png') no-repeat;
+  margin-bottom: 100px;
+}
+
+.banner_text {
+  color: #fff;
+  padding: 54px 54px 50px 450px;
+  line-height: 1.4;
+}
+
+.banner_text h4 {
+  font-size: 48px;
+  padding: 20px 0 70px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  line-height: 1.4;
+}
+
+.blog li {
+  width: 570px;
+  background: #f0f5f9;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.blog li h4 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.blog li p {
+  margin: 16px 0 30px 0;
+  color: #666666;
+}
+
+.blog li span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* section_06 */
+.sec_06 {
+  background: url('../images/bg_03.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.sec_06 .container {
+  text-align: center;
+}
+
+.sec_06 h3 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 100px 0 66px;
+}
+
+.sec_06 .avatar {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  padding-bottom: 22px;
+}
+
+.sec_06 .avatar img {
+  width: 40px;
+}
+
+/* section_07 */
+
+.sec_07 {
+  background: #f0f5f9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+.sec_07 h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sec_07 p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 50px;
+  line-height: 1.4;
+}
+.btn2 {
+  background: #454890;
+  color: #fff;
+  padding: 18px 26px;
+  border-radius: 55px;
+}
+
+/* footer */
+.footer {
+  background: #282634;
+  padding: 120px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.footer .left {
+  float: left;
+  width: 400px;
+}
+
+.footer .left .copyright {
+  padding: 20px 0;
+}
+
+.footer .right {
+  float: right;
+  width: 770px;
+}
+
+.footer .right .bottom_menu {
+}
+.footer .right .bottom_menu > li {
+  display: inline-block;
+  padding-right: 130px;
+}
+
+.footer .right .bottom_menu > li:last-child {
+  padding-right: 0;
+}
+
+.footer .right .bottom_menu > li > a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer .right .bottom_menu ul li {
+  padding: 10px 0;
 }
